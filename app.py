@@ -103,23 +103,23 @@ elif topic == "量價關係":
     st.sidebar.info("**量是水的動力，價是船的高度**")
     
     # 子選單
-    v_topic = st.sidebar.radio("🔍 常見組合", ["量增價漲", "量增價跌", "量縮價漲", "量縮價跌", "量縮價跌", "量縮價跌", "量縮價跌", "量縮價跌"])
+    v_topic = st.sidebar.radio("🔍 常見組合", ["量增價漲", "量增價跌", "量縮價漲", "量縮價跌", "量價齊揚", "量價背離", "殺出量", "量縮整理"])
     if v_topic == "量增價漲":
         st.sidebar.success("【多頭攻擊】\n代表市場認同度高，主力與散戶同步進場，是健康的上升趨勢。")
     elif v_topic == "量增價跌":
         st.sidebar.warning("【恐慌拋售】\n若出現在高檔，小心是大戶倒貨；若在低檔長久下跌後出現，可能是落底換手。")
     elif v_topic == "量縮價漲":
         st.sidebar.error("【動能不足】\n價格雖漲但沒量，代表追價意願薄弱，容易遇到壓力就反轉。")
-    elif v_topic == "量縮價漲":
-        st.sidebar.error("【動能不足】\n價格雖漲但沒量，代表追價意願薄弱，容易遇到壓力就反轉。")
-    elif v_topic == "量縮價漲":
-        st.sidebar.error("【動能不足】\n價格雖漲但沒量，代表追價意願薄弱，容易遇到壓力就反轉。")
-    elif v_topic == "量縮價漲":
-        st.sidebar.error("【動能不足】\n價格雖漲但沒量，代表追價意願薄弱，容易遇到壓力就反轉。")
-    elif v_topic == "量縮價漲":
-        st.sidebar.error("【動能不足】\n價格雖漲但沒量，代表追價意願薄弱，容易遇到壓力就反轉。")
-    elif v_topic == "量縮價漲":
-        st.sidebar.error("【動能不足】\n價格雖漲但沒量，代表追價意願薄弱，容易遇到壓力就反轉。")
+    elif v_topic == "量縮價跌":
+        st.sidebar.error("賣盤枯竭，大家不想賣，但也沒人想買。")
+    elif v_topic == "量價齊揚":
+        st.sidebar.error("趨勢確立，通常是健康的波段起點。")
+    elif v_topic == "量價背離":
+        st.sidebar.error("小心可能是虛漲，隨時會回檔。")
+    elif v_topic == "殺出量":
+        st.sidebar.error("出現在高位是警訊；出現在低位可能是止跌訊號。")
+    elif v_topic == "量縮整理":
+        st.sidebar.error("進入洗盤階段，等待下一次帶量突破。")
 
 
 
